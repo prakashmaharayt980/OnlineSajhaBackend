@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src":"base/apps.py",
+            "use":"vercel-node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"base/apps.py"
+        }
+    ]
+}
